@@ -16,21 +16,22 @@ public class Account {
 	}
 
 	public void deposit(Amount value, Date date) {
-		Transaction transaction = new Transaction(value, date);
-		Amount balanceAfterTransaction = transaction.balanceAfterTransaction(balance);
-		balance = balanceAfterTransaction;
-		statement.addLineContaining(transaction, balanceAfterTransaction);
-	}
+		recordTransaction(value, date);
+	} 
 
 	public void withdrawal(Amount value, Date date) {
-		Transaction transaction = new Transaction(value.negative(), date);
-		Amount balanceAfterTransaction = transaction.balanceAfterTransaction(balance);
-		balance = balanceAfterTransaction;
-		statement.addLineContaining(transaction, balanceAfterTransaction);
+		recordTransaction(value.negative(), date);
 	}
 
 	public void printStatement(PrintStream printer) {
 		statement.printTo(printer);
 	}
 
+	private void recordTransaction(Amount value, Date date) {
+		Transaction transaction = new Transaction(value, date);
+		Amount balanceAfterTransaction = transaction.balanceAfterTransaction(balance);
+		balance = balanceAfterTransaction;
+		statement.addLineContaining(transaction, balanceAfterTransaction);
+	}
+	
 }
