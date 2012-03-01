@@ -26,8 +26,7 @@ The Rules
 8. No classes with more than two instance variables
 9. No getters/setters/properties
 
-
-For more information:
+#### For more information:
 
 -  [Object Calisthenics pdf](http://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf)
 -  Object Calisthenics (full book), Jeff Bay in: The ThoughtWorks Anthology.
