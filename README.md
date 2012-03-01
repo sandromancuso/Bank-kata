@@ -28,7 +28,7 @@ The Rules
 
 
 For more information:
--  [Object Calisthenics](http://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf)
+-  [Object Calisthenics](http://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf).
 -  Object Calisthenics, Jeff Bay in: The ThoughtWorks Anthology,
-Pragmatic Bookshelf 2008
--  Original idea for the kata: How Object-Oriented Are You Feeling Today? - Krzysztof Jelski (Session on the Software Craftsmanship UK 2011 conference)
+Pragmatic Bookshelf 2008.
+-  Original idea for the kata: How Object-Oriented Are You Feeling Today? - Krzysztof Jelski (Session on the Software Craftsmanship UK 2011 conference).
