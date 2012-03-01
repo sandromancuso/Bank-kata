@@ -11,7 +11,8 @@ public class Statement {
 	public static final String STATEMENT_HEADER = "date       | credit   | debit    | balance";
 
 	private List<StatementLine> statementLines = new LinkedList<StatementLine>();
-		public void addLineContaining(Transaction transaction, Amount currentBalance) {
+	
+	public void addLineContaining(Transaction transaction, Amount currentBalance) {
 		statementLines.add(TOP_OF_THE_LIST, new StatementLine(transaction, currentBalance));
 	}
 	
